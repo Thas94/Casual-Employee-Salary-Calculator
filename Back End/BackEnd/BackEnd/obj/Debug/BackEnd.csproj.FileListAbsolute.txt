@@ -1,0 +1,75 @@
+C:\Users\GUSHIANA\Desktop\Doctor's Appointment system\BackEnd\BackEnd\bin\BackEnd.dll.config
+C:\Users\GUSHIANA\Desktop\Doctor's Appointment system\BackEnd\BackEnd\bin\BackEnd.dll
+C:\Users\GUSHIANA\Desktop\Doctor's Appointment system\BackEnd\BackEnd\bin\BackEnd.pdb
+C:\Users\GUSHIANA\Desktop\Doctor's Appointment system\BackEnd\BackEnd\bin\Antlr3.Runtime.dll
+C:\Users\GUSHIANA\Desktop\Doctor's Appointment system\BackEnd\BackEnd\bin\EntityFramework.dll
+C:\Users\GUSHIANA\Desktop\Doctor's Appointment system\BackEnd\BackEnd\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\GUSHIANA\Desktop\Doctor's Appointment system\BackEnd\BackEnd\bin\Newtonsoft.Json.dll
+C:\Users\GUSHIANA\Desktop\Doctor's Appointment system\BackEnd\BackEnd\bin\System.Net.Http.Formatting.dll
+C:\Users\GUSHIANA\Desktop\Doctor's Appointment system\BackEnd\BackEnd\bin\System.Web.Helpers.dll
+C:\Users\GUSHIANA\Desktop\Doctor's Appointment system\BackEnd\BackEnd\bin\System.Web.Http.dll
+C:\Users\GUSHIANA\Desktop\Doctor's Appointment system\BackEnd\BackEnd\bin\System.Web.Http.WebHost.dll
+C:\Users\GUSHIANA\Desktop\Doctor's Appointment system\BackEnd\BackEnd\bin\System.Web.Mvc.dll
+C:\Users\GUSHIANA\Desktop\Doctor's Appointment system\BackEnd\BackEnd\bin\System.Web.Optimization.dll
+C:\Users\GUSHIANA\Desktop\Doctor's Appointment system\BackEnd\BackEnd\bin\System.Web.Razor.dll
+C:\Users\GUSHIANA\Desktop\Doctor's Appointment system\BackEnd\BackEnd\bin\System.Web.WebPages.Deployment.dll
+C:\Users\GUSHIANA\Desktop\Doctor's Appointment system\BackEnd\BackEnd\bin\System.Web.WebPages.dll
+C:\Users\GUSHIANA\Desktop\Doctor's Appointment system\BackEnd\BackEnd\bin\System.Web.WebPages.Razor.dll
+C:\Users\GUSHIANA\Desktop\Doctor's Appointment system\BackEnd\BackEnd\bin\WebGrease.dll
+C:\Users\GUSHIANA\Desktop\Doctor's Appointment system\BackEnd\BackEnd\bin\EntityFramework.xml
+C:\Users\GUSHIANA\Desktop\Doctor's Appointment system\BackEnd\BackEnd\bin\Newtonsoft.Json.xml
+C:\Users\GUSHIANA\Desktop\Doctor's Appointment system\BackEnd\BackEnd\bin\System.Net.Http.Formatting.xml
+C:\Users\GUSHIANA\Desktop\Doctor's Appointment system\BackEnd\BackEnd\bin\System.Web.Helpers.xml
+C:\Users\GUSHIANA\Desktop\Doctor's Appointment system\BackEnd\BackEnd\bin\System.Web.Http.xml
+C:\Users\GUSHIANA\Desktop\Doctor's Appointment system\BackEnd\BackEnd\bin\System.Web.Http.WebHost.xml
+C:\Users\GUSHIANA\Desktop\Doctor's Appointment system\BackEnd\BackEnd\bin\System.Web.Mvc.xml
+C:\Users\GUSHIANA\Desktop\Doctor's Appointment system\BackEnd\BackEnd\bin\System.Web.Optimization.xml
+C:\Users\GUSHIANA\Desktop\Doctor's Appointment system\BackEnd\BackEnd\bin\System.Web.Razor.xml
+C:\Users\GUSHIANA\Desktop\Doctor's Appointment system\BackEnd\BackEnd\bin\System.Web.WebPages.xml
+C:\Users\GUSHIANA\Desktop\Doctor's Appointment system\BackEnd\BackEnd\bin\System.Web.WebPages.Deployment.xml
+C:\Users\GUSHIANA\Desktop\Doctor's Appointment system\BackEnd\BackEnd\bin\System.Web.WebPages.Razor.xml
+C:\Users\GUSHIANA\Desktop\Doctor's Appointment system\BackEnd\BackEnd\bin\Antlr3.Runtime.pdb
+C:\Users\GUSHIANA\Desktop\Doctor's Appointment system\BackEnd\BackEnd\obj\Debug\BackEnd.dll
+C:\Users\GUSHIANA\Desktop\Doctor's Appointment system\BackEnd\BackEnd\obj\Debug\BackEnd.pdb
+C:\Users\GUSHIANA\Desktop\Doctor's Appointment system\BackEnd\BackEnd\bin\System.Web.Cors.dll
+C:\Users\GUSHIANA\Desktop\Doctor's Appointment system\BackEnd\BackEnd\bin\System.Web.Http.Cors.dll
+C:\Users\GUSHIANA\Desktop\Doctor's Appointment system\BackEnd\BackEnd\bin\System.Web.Http.Cors.xml
+C:\Users\Thabiso\Downloads\Doctor-s-Appointment-System-master\BackEnd\BackEnd\bin\BackEnd.dll.config
+C:\Users\Thabiso\Downloads\Doctor-s-Appointment-System-master\BackEnd\BackEnd\bin\BackEnd.dll
+C:\Users\Thabiso\Downloads\Doctor-s-Appointment-System-master\BackEnd\BackEnd\bin\BackEnd.pdb
+C:\Users\Thabiso\Downloads\Doctor-s-Appointment-System-master\BackEnd\BackEnd\bin\Antlr3.Runtime.dll
+C:\Users\Thabiso\Downloads\Doctor-s-Appointment-System-master\BackEnd\BackEnd\bin\EntityFramework.dll
+C:\Users\Thabiso\Downloads\Doctor-s-Appointment-System-master\BackEnd\BackEnd\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Thabiso\Downloads\Doctor-s-Appointment-System-master\BackEnd\BackEnd\bin\Newtonsoft.Json.dll
+C:\Users\Thabiso\Downloads\Doctor-s-Appointment-System-master\BackEnd\BackEnd\bin\System.Net.Http.Formatting.dll
+C:\Users\Thabiso\Downloads\Doctor-s-Appointment-System-master\BackEnd\BackEnd\bin\System.Web.Cors.dll
+C:\Users\Thabiso\Downloads\Doctor-s-Appointment-System-master\BackEnd\BackEnd\bin\System.Web.Helpers.dll
+C:\Users\Thabiso\Downloads\Doctor-s-Appointment-System-master\BackEnd\BackEnd\bin\System.Web.Http.Cors.dll
+C:\Users\Thabiso\Downloads\Doctor-s-Appointment-System-master\BackEnd\BackEnd\bin\System.Web.Http.dll
+C:\Users\Thabiso\Downloads\Doctor-s-Appointment-System-master\BackEnd\BackEnd\bin\System.Web.Http.WebHost.dll
+C:\Users\Thabiso\Downloads\Doctor-s-Appointment-System-master\BackEnd\BackEnd\bin\System.Web.Mvc.dll
+C:\Users\Thabiso\Downloads\Doctor-s-Appointment-System-master\BackEnd\BackEnd\bin\System.Web.Optimization.dll
+C:\Users\Thabiso\Downloads\Doctor-s-Appointment-System-master\BackEnd\BackEnd\bin\System.Web.Razor.dll
+C:\Users\Thabiso\Downloads\Doctor-s-Appointment-System-master\BackEnd\BackEnd\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Thabiso\Downloads\Doctor-s-Appointment-System-master\BackEnd\BackEnd\bin\System.Web.WebPages.dll
+C:\Users\Thabiso\Downloads\Doctor-s-Appointment-System-master\BackEnd\BackEnd\bin\System.Web.WebPages.Razor.dll
+C:\Users\Thabiso\Downloads\Doctor-s-Appointment-System-master\BackEnd\BackEnd\bin\WebGrease.dll
+C:\Users\Thabiso\Downloads\Doctor-s-Appointment-System-master\BackEnd\BackEnd\bin\EntityFramework.xml
+C:\Users\Thabiso\Downloads\Doctor-s-Appointment-System-master\BackEnd\BackEnd\bin\Newtonsoft.Json.xml
+C:\Users\Thabiso\Downloads\Doctor-s-Appointment-System-master\BackEnd\BackEnd\bin\System.Net.Http.Formatting.xml
+C:\Users\Thabiso\Downloads\Doctor-s-Appointment-System-master\BackEnd\BackEnd\bin\System.Web.Http.xml
+C:\Users\Thabiso\Downloads\Doctor-s-Appointment-System-master\BackEnd\BackEnd\bin\System.Web.Http.Cors.xml
+C:\Users\Thabiso\Downloads\Doctor-s-Appointment-System-master\BackEnd\BackEnd\bin\System.Web.Http.WebHost.xml
+C:\Users\Thabiso\Downloads\Doctor-s-Appointment-System-master\BackEnd\BackEnd\bin\System.Web.Helpers.xml
+C:\Users\Thabiso\Downloads\Doctor-s-Appointment-System-master\BackEnd\BackEnd\bin\System.Web.Mvc.xml
+C:\Users\Thabiso\Downloads\Doctor-s-Appointment-System-master\BackEnd\BackEnd\bin\System.Web.Optimization.xml
+C:\Users\Thabiso\Downloads\Doctor-s-Appointment-System-master\BackEnd\BackEnd\bin\System.Web.Razor.xml
+C:\Users\Thabiso\Downloads\Doctor-s-Appointment-System-master\BackEnd\BackEnd\bin\System.Web.WebPages.xml
+C:\Users\Thabiso\Downloads\Doctor-s-Appointment-System-master\BackEnd\BackEnd\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Thabiso\Downloads\Doctor-s-Appointment-System-master\BackEnd\BackEnd\bin\System.Web.WebPages.Razor.xml
+C:\Users\Thabiso\Downloads\Doctor-s-Appointment-System-master\BackEnd\BackEnd\bin\Antlr3.Runtime.pdb
+C:\Users\Thabiso\Downloads\Doctor-s-Appointment-System-master\BackEnd\BackEnd\obj\Debug\BackEnd.dll
+C:\Users\Thabiso\Downloads\Doctor-s-Appointment-System-master\BackEnd\BackEnd\obj\Debug\BackEnd.pdb
+C:\Users\Thabiso\Downloads\Doctor-s-Appointment-System-master\BackEnd\BackEnd\bin\EntityFramework.SqlServer.dll
+C:\Users\Thabiso\Downloads\Doctor-s-Appointment-System-master\BackEnd\BackEnd\bin\EntityFramework.SqlServer.xml
+C:\Users\Thabiso\Downloads\Doctor-s-Appointment-System-master\BackEnd\BackEnd\obj\Debug\BackEnd.csprojResolveAssemblyReference.cache

@@ -1,0 +1,206 @@
+<div class="modal" id="myModal3">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+
+      <!-- Modal body for registration -->
+      <div class="modal-body text-center">
+        <!--<i class="fa fa-user-plus fa-10x text-primary"></i>-->
+        
+        <br> 
+        <br>
+        <h4>Roles</h4>
+        <form class="myform" #CreateRolesForm="ngForm" (ngSubmit)="CreateRole(CreateRolesForm)"> 
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <input type="text" #RoleCategory="ngModel" [(ngModel)]="roles.RoleCategory" name="RoleCategory" class="form-control form-control-lg" placeholder="Role Category" required>
+              <div class="validation-error" *ngIf="RoleCategory.invalid && RoleCategory.touched">Field is required</div> 
+            </div>
+            <div class="form-group col-md-6">
+              <input type="text" #RoleRate="ngModel" [(ngModel)]="roles.RoleRate" name="RoleRate" class="form-control form-control-lg" placeholder="Role Hour Rate" required>
+              <div class="validation-error" *ngIf="RoleRate.invalid && RoleRate.touched">Field is required</div> 
+            </div>          
+          </div>
+          <button type="submit" class="btn btn-outline-primary btn-lg" style="width:100%">Create Role</button>
+        </form> 
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal" id="myModal2">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+
+      <!-- Modal body for registration -->
+      <div class="modal-body text-center">
+        <!--<i class="fa fa-user-plus fa-10x text-primary"></i>-->
+        
+        <br> 
+        <br>
+        <h4>Roles</h4>
+        <div class="row">
+     
+          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12"> 
+            <div class="box-part text-center">          
+              <div id="content" #content>    
+                <br>
+                <br>
+                <br>
+                  <table class="table table-dark table-striped" id="contentToConvert">
+                    <thead>
+                      <tr>
+                        <th>Role Category</th>
+                        <th>Role Hour Rate</th> 
+                      </tr>
+                    </thead>
+                    <tbody *ngFor="let role of Allroles">
+                      <tr>
+                        <td>{{role.RoleCategory}}</td>
+                        <td>{{role.RoleRate}}</td>
+                        <td>
+                          <button type="button" class="btn btn-success" (click)="selectRole(role)" data-toggle="modal" data-target="#myModal3">Select</button>
+                        </td>
+                        <td>
+                          <button type="button" class="btn btn-danger" (click)="deleteRole(role)">Delete</button>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>      
+              </div>           
+            </div>
+          </div>	 
+        
+          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12"> 
+            <div class="box-part text-center">          
+              <form class="myform" #EditRolesForm="ngForm" (ngSubmit)="EditRole(EditRolesForm)"> 
+                <br>
+                <br>
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <input type="text" #rolecat="ngModel" [(ngModel)]="roles.RoleCategory" name="RoleCategory" class="form-control form-control-lg" placeholder="Role Category" required>
+                  </div>
+                  <div class="form-group col-md-6">
+                    <input type="text" #rolerate="ngModel" [(ngModel)]="roles.RoleRate" name="RoleRate" class="form-control form-control-lg" placeholder="Role Hour Rate" required>
+                  </div>          
+                </div>
+                <button type="submit" class="btn btn-outline-primary btn-lg" style="width:100%">Edit Role</button>
+              </form>          
+            </div>
+          </div>     
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <!-- Trigger the modal with a button -->
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" style="text-align: center;">Roles Details</h4> 
+        </div>
+        <div class="modal-body">
+          <div class="row">
+       
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12"> 
+              <div class="box-part text-center">          
+                <div id="content" #content>    
+                  <br>
+                    <table class="table table-dark table-striped" id="contentToConvert">
+                      <thead>
+                        <tr>
+                          <th>Role Category</th>
+                          <th>Role Hour Rate</th> 
+                        </tr>
+                      </thead>
+                      <tbody *ngFor="let role of Allroles">
+                        <tr>
+                          <td>{{role.RoleCategory}}</td>
+                          <td>{{role.RoleRate}}</td>
+                          <td>
+                            <button type="button" class="btn btn-success" (click)="selectRole(role)" data-toggle="modal" data-target="#myModal3">Select</button>
+                          </td>
+                          <td>
+                            <button type="button" class="btn btn-danger" (click)="deleteRole(role)">Delete</button>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>      
+                </div>           
+              </div>
+            </div>	 
+          
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12"> 
+              <div class="box-part text-center">          
+                <form class="myform" #EditRolesForm="ngForm" (ngSubmit)="EditRole(EditRolesForm)"> 
+                  <br>
+                  <br>
+                  <div class="form-row">
+                    <div class="form-group col-md-6">
+                      <input type="text" #rolecat="ngModel" [(ngModel)]="roles.RoleCategory" name="RoleCategory" class="form-control form-control-lg" placeholder="Role Category" required>
+                    </div>
+                    <div class="form-group col-md-6">
+                      <input type="text" #rolerate="ngModel" [(ngModel)]="roles.RoleRate" name="RoleRate" class="form-control form-control-lg" placeholder="Role Hour Rate" required>
+                    </div>          
+                  </div>
+                  <button type="submit" class="btn btn-outline-primary btn-lg" style="width:100%">Edit Role</button>
+                </form>          
+              </div>
+            </div>     
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="box">
+  <div class="container">
+
+      <div class="row justify-content-center">
+          <h1><b>Welcome to the Roles Profile</b></h1>
+      </div>
+      <br>
+      <br>
+      <br>
+     <div class="row">
+     
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12"> 
+          <div class="box-part text-center">          
+                <i class="fas fa-clipboard fa-6x" aria-hidden="true"></i>                               
+            <a href="" class="nav-link" data-toggle="modal" data-target="#myModal3">Create Roles</a>           
+          </div>
+        </div>	 
+      
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12"> 
+          <div class="box-part text-center">           
+              <i class="fas fa-edit fa-6x" aria-hidden="true"></i>                               
+            <a href="" class="nav-link" data-toggle="modal" data-target="#myModal">Edit Roles</a>           
+          </div>
+        </div>
+      
+        
+  </div>		
+  </div>
+</div>
+
+

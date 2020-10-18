@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Model4StoreContainer" CdmEntityContainer="CreateRolesEntities">
+    <EntitySetMapping Name="CreateRoles">
+      <EntityTypeMapping TypeName="Model4.CreateRole">
+        <MappingFragment StoreEntitySet="CreateRole">
+          <ScalarProperty Name="CreateRoleID" ColumnName="CreateRoleID" />
+          <ScalarProperty Name="RoleCategory" ColumnName="RoleCategory" />
+          <ScalarProperty Name="RoleRate" ColumnName="RoleRate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

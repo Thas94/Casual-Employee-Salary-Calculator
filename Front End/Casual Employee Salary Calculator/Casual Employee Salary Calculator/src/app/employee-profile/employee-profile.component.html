@@ -1,0 +1,112 @@
+<div class="modal" id="myModal3">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+
+      <!-- Modal body for registration -->
+      <div class="modal-body text-center">
+        <!--<i class="fa fa-user-plus fa-10x text-primary"></i>-->
+        <img [src]="imageURL"  style="width:150px;height:100px">
+        <br> 
+        <br>
+        <h4>Personal Details</h4>
+        <form class="myform" #empForm="ngForm" (ngSubmit)="registerEmployees(empForm)"> 
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <input type="text" #firstname="ngModel" [(ngModel)]="employees.FirstName" name="FIRSTNAME" class="form-control form-control-lg" placeholder="First Name" required>
+              <div class="validation-error" *ngIf="firstname.invalid && firstname.touched">Field is required</div>
+            </div>
+            <div class="form-group col-md-6">
+              <input type="text" #lastname="ngModel" [(ngModel)]="employees.LastName" name="LASTNAME" class="form-control form-control-lg" placeholder="Last Name" required>
+              <div class="validation-error" *ngIf="lastname.invalid && lastname.touched">Field is required</div>
+            </div>
+            <div class="form-group col-md-6">
+              <select class="form-control form-control-lg" id="Title" name ="Title"  style="background-color: #def2f6;" required>
+                <option value="">Select Title...</option>  
+                <option *ngFor ="let t of title">{{t.Title}}</option> 
+              </select> 
+            </div>
+            <div class="form-group col-md-6">
+              <select class="form-control form-control-lg" id="Gender" name ="Gender"  style="background-color: #def2f6;" required>
+                <option value="">Select Gender...</option>  
+                <option *ngFor ="let g of gender">{{g.Gender}}</option> 
+              </select>             </div>
+            <div class="form-group col-md-6">
+              <label for="usr">Date of birth:</label>
+              <input type="date"  #DOB="ngModel" [(ngModel)]="employees.BirthDate" name="DOB" class="form-control form-control-lg btn-block" placeholder="DOB" required>
+              <div class="validation-error" *ngIf="DOB.invalid && DOB.touched">Field is required</div>
+            </div>
+            <div class="form-group col-md-6">
+              <label for="usr">Hire date:</label>
+              <input type="date"  #HD="ngModel" [(ngModel)]="employees.HireDate" name="HD" class="form-control form-control-lg btn-block" placeholder="Hire Date" required>
+              <div class="validation-error" *ngIf="HD.invalid && HD.touched">Field is required</div>
+            </div>
+            <div class="form-group col-md-6">
+              <input type="text" #office="ngModel" [(ngModel)]="employees.Office" name="office" class="form-control form-control-lg btn-block" placeholder="Office" required>
+              <div class="validation-error" *ngIf="office.invalid && office.touched">Field is required</div>
+            </div>
+            <div class="form-group col-md-6">
+              <input type="text" #EmpCode="ngModel" [(ngModel)]="employees.EmployeeCode" name="EmpCode" class="form-control form-control-lg btn-block" placeholder="Employee Code" required>
+              <div class="validation-error" *ngIf="EmpCode.invalid && EmpCode.touched">Field is required</div>
+            </div>
+            <div class="form-group col-md-6">
+              <select class="form-control form-control-lg" id="RoleCategory" name ="RoleCategory"  style="background-color: #def2f6;">
+                <option value="">Select Role...</option>  
+                <option *ngFor ="let roles of allRoles">{{roles.RoleCategory}}</option>
+              </select>            
+             </div>
+            
+            <div class="form-group col-md-6">
+              <input type="file" Image accept="image/*" (change)="handleFileInput($event.target.files)">
+            </div>
+            <div class="form-group col-md-6">
+              <input type="hidden"  #picid="ngModel" [(ngModel)]="employees.PictureID" name="picid" class="form-control form-control-lg btn-block" placeholder="FINGER_ID" required>
+            </div>
+          </div>
+          <button type="submit" *ngIf="showButton" class="btn btn-outline-primary btn-lg" style="width:100%">Register Employee</button>
+        </form> 
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="box">
+  <div class="container">
+
+      <div class="row justify-content-center">
+          <h1><b>Welcome to the Employees Profile</b></h1>
+      </div>
+      <br>
+      <br>
+      <br>
+     <div class="row">
+     
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12"> 
+          <div class="box-part text-center">          
+                <i class="fas fa-user-plus fa-6x" aria-hidden="true"></i>                               
+            <a href="" class="nav-link" data-toggle="modal" data-target="#myModal3">Create Employees</a>           
+          </div>
+        </div>	 
+      
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12"> 
+          <div class="box-part text-center">          
+              <i class="fas fa-user-edit fa-6x" aria-hidden="true"></i>                               
+            <a href="" class="nav-link" routerLink="/edit-employees">Edit Employees</a>           
+          </div>
+        </div>
+      
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12"> 
+          <div class="box-part text-center">          
+              <i class="fas fa-users-cog fa-6x" aria-hidden="true"></i>                               
+            <a href="" class="nav-link" routerLink="/assign-tasks">Assign Employee Role&Tasks</a>             
+          </div>
+        </div>
+  </div>		
+  </div>
+</div>
+

@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="AppoimtmentModel1" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="PATIENTDETAIL">
+    <Key>
+      <PropertyRef Name="PATIENTID" />
+    </Key>
+    <Property Name="PATIENTID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FIRSTNAME" Type="String" MaxLength="50" FixedLength="true" Unicode="true" />
+    <Property Name="LASTNAME" Type="String" MaxLength="50" FixedLength="true" Unicode="true" />
+    <Property Name="EMAILADDRESS" Type="String" MaxLength="50" FixedLength="true" Unicode="true" />
+    <Property Name="PASSWORD" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="USERNAME" Type="String" MaxLength="50" FixedLength="true" Unicode="true" />
+    <Property Name="CONTACT" Type="Int32" />
+    <Property Name="GENDER" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="CATEGORY" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DATE" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DOB" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="TIME" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityContainer Name="PatientDetailsEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="PATIENTDETAILS" EntityType="Self.PATIENTDETAIL" />
+  </EntityContainer>
+</Schema>

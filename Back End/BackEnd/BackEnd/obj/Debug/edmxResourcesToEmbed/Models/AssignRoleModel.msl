@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Model2StoreContainer" CdmEntityContainer="AssignRoleEntitties">
+    <EntitySetMapping Name="AssignRoles">
+      <EntityTypeMapping TypeName="Model2.AssignRole">
+        <MappingFragment StoreEntitySet="AssignRole">
+          <ScalarProperty Name="RoleID" ColumnName="RoleID" />
+          <ScalarProperty Name="RoleCategory" ColumnName="RoleCategory" />
+          <ScalarProperty Name="RoleRate" ColumnName="RoleRate" />
+          <ScalarProperty Name="EmployeeID" ColumnName="EmployeeID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

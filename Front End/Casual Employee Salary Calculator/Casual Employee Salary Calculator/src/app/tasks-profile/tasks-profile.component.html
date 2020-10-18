@@ -1,0 +1,213 @@
+<div class="modal" id="myModal3">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+
+      <!-- Modal body for registration -->
+      <div class="modal-body text-center">
+        <!--<i class="fa fa-user-plus fa-10x text-primary"></i>-->
+        
+        <br> 
+        <br>
+        <h4>Task</h4>
+        <table>
+          <tbody *ngFor="let roles of allRoles">
+            <tr>
+              <td>{{roles.RoleCategory}}</td>
+              <td>
+                <button type="button" class="btn btn-success" (click)="getRoleID(roles)">Select</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <form class="myform" #CreateTasksForm="ngForm" (ngSubmit)="CreateTask(CreateTasksForm)"> 
+          <div class="form-row">  
+              <br>
+              <br>
+              <br> 
+              <div class="form-group col-md-6">
+                <input type="text" #TaskDescription="ngModel" [(ngModel)]="tasks.TaskDescription" name="TaskDescription" class="form-control form-control-lg" placeholder="Task Description" required>
+                <div class="validation-error" *ngIf="TaskDescription.invalid && TaskDescription.touched">Field is required</div>
+              </div>
+              <div class="form-group col-md-6"> 
+                <input type="text" #TaskHours="ngModel" [(ngModel)]="tasks.TaskHours" name="TaskHours" class="form-control form-control-lg" placeholder="Task Hours" required>  
+                <div class="validation-error" *ngIf="TaskHours.invalid && TaskHours.touched">Field is required</div>
+              </div>          
+          </div>
+          <button type="submit" class="btn btn-outline-primary btn-lg" style="width:100%">Create Task</button>
+        </form> 
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal" id="myModal2">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+
+      <!-- Modal body for registration -->
+      <div class="modal-body text-center">
+        <!--<i class="fa fa-user-plus fa-10x text-primary"></i>-->
+        
+        <br> 
+        <br>
+        <h4>Roles</h4>
+        <div class="row">
+     
+          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12"> 
+            <div class="box-part text-center">          
+              <div id="content" #content>    
+                <br>
+                <br>
+                <br>
+                  <table class="table table-dark table-striped" id="contentToConvert">
+                    <thead>
+                      <tr>
+                        <th>Task Description</th>
+                        <th>Task Hours</th> 
+                      </tr>
+                    </thead>
+                    <tbody *ngFor="let tasks of Alltasks">
+                      <tr>
+                        <td>{{tasks.TaskDescription}}</td>
+                        <td>{{tasks.TaskHours}}</td>
+                        <td>
+                          <button type="button" class="btn btn-success" (click)="selectTask(tasks)" data-toggle="modal" data-target="#myModal3">Select</button>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>      
+              </div>           
+            </div>
+          </div>	 
+        
+          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12"> 
+            <div class="box-part text-center">          
+              <form class="myform" #EditTasksForm="ngForm" (ngSubmit)="EditTasks(EditTasksForm)">
+                <br>
+                <br> 
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <input type="text" #TaskDescription="ngModel" [(ngModel)]="tasks.TaskDescription" name="TaskDescription" class="form-control form-control-lg" placeholder="Task Description" required>
+                  </div>
+                  <div class="form-group col-md-6">
+                    <input type="text" #TaskHours="ngModel" [(ngModel)]="tasks.TaskHours" name="TaskHours" class="form-control form-control-lg" placeholder="Task Hours" required>
+                  </div>          
+                </div>
+                <button type="submit" class="btn btn-outline-primary btn-lg" style="width:100%">Edit Task</button>
+              </form>         
+            </div>
+          </div>       
+    </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <!-- Trigger the modal with a button -->
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" style="text-align: center;">Tasks Details</h4> 
+        </div>
+        <div class="modal-body">
+          <div class="row">
+       
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12"> 
+              <div class="box-part text-center">          
+                <div id="content" #content>    
+                  <br>
+                  <br>
+                  <br>
+                    <table class="table table-dark table-striped" id="contentToConvert">
+                      <thead>
+                        <tr>
+                          <th>Task Description</th>
+                          <th>Task Hours</th> 
+                        </tr>
+                      </thead>
+                      <tbody *ngFor="let tasks of Alltasks">
+                        <tr>
+                          <td>{{tasks.TaskDescription}}</td>
+                          <td>{{tasks.TaskHours}}</td>
+                          <td>
+                            <button type="button" class="btn btn-success" (click)="selectTask(tasks)" data-toggle="modal" data-target="#myModal3">Select</button>
+                          </td>
+                          <td>
+                            <button type="button" class="btn btn-danger" (click)="deleteTask(tasks)">Delete</button> 
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>      
+                </div>           
+              </div>
+            </div>	 
+          
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12"> 
+              <div class="box-part text-center">          
+                <form class="myform" #EditTasksForm="ngForm" (ngSubmit)="EditTasks(EditTasksForm)">
+                  <br>
+                  <br> 
+                  <div class="form-row">
+                    <div class="form-group col-md-6">
+                      <input type="text" #TaskDescription="ngModel" [(ngModel)]="tasks.TaskDescription" name="TaskDescription" class="form-control form-control-lg" placeholder="Task Description" required>
+                    </div>
+                    <div class="form-group col-md-6">
+                      <input type="text" #TaskHours="ngModel" [(ngModel)]="tasks.TaskHours" name="TaskHours" class="form-control form-control-lg" placeholder="Task Hours" required>
+                    </div>          
+                  </div>
+                  <button type="submit" class="btn btn-outline-primary btn-lg" style="width:100%">Edit Task</button>
+                </form>         
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="box">
+  <div class="container">
+
+      <div class="row justify-content-center">
+          <h1><b>Welcome to the Tasks Profile</b></h1>
+      </div>
+      <br>
+      <br>
+      <br>
+     <div class="row">
+     
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12"> 
+          <div class="box-part text-center">          
+                <i class="fas fa-tasks fa-6x" aria-hidden="true"></i>                               
+            <a href="" class="nav-link" data-toggle="modal" data-target="#myModal3">Create Tasks</a>            
+          </div>
+        </div>	 
+      
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12"> 
+          <div class="box-part text-center">          
+              <i class="far fa-edit fa-6x" aria-hidden="true"></i>                               
+            <a href="" class="nav-link" data-toggle="modal" data-target="#myModal">Edit Tasks</a>           
+          </div>
+        </div>
+  </div>		
+  </div>
+</div>

@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="AppoimtmentModel2.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="ATTENDED">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FIRSTNAME" Type="nchar" MaxLength="50" />
+    <Property Name="LASTNAME" Type="nchar" MaxLength="50" />
+    <Property Name="EMAILADDRESS" Type="nchar" MaxLength="50" />
+    <Property Name="USERNAME" Type="nchar" MaxLength="1" />
+    <Property Name="CONTACT" Type="int" />
+    <Property Name="GENDER" Type="nchar" MaxLength="50" />
+    <Property Name="CATEGORY" Type="nvarchar" MaxLength="50" />
+    <Property Name="DATE" Type="nvarchar" MaxLength="50" />
+    <Property Name="DOB" Type="nvarchar" MaxLength="50" />
+    <Property Name="TIME" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityContainer Name="AppoimtmentModel2StoreContainer">
+    <EntitySet Name="ATTENDED" EntityType="Self.ATTENDED" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

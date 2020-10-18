@@ -1,0 +1,105 @@
+<div class="modal" id="myModal2">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+
+      <!-- Modal body for registration -->
+      <div class="modal-body text-center">
+        <!--<i class="fa fa-user-plus fa-10x text-primary"></i>-->
+        <br> 
+        <br>
+        <h4>Choose Date</h4>
+        <table class="table table-dark table-striped" id="contentToConvert">
+          <thead>
+            <tr>
+              <th>Date</th>
+            </tr>
+          </thead>
+          <tbody *ngFor="let d of dateByID">
+            <tr>
+              <td>{{d.DateAssigned}}</td>
+              <td>
+                <button type="button" class="btn btn-success" (click)="selectDate(d)">Select</button>
+              </td>
+            </tr>
+          </tbody>
+        </table> 
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="form-row">
+  <div class="form-group col-md-6">
+    <div id="content" #content>    
+      <br>
+        <table class="table table-dark table-striped" id="contentToConvert">
+          <thead>
+            <tr>
+              <th>FIRST NAME</th>
+              <th>LAST NAME</th>
+            </tr>
+          </thead>
+          <tbody *ngFor="let pat of allEmployees">
+            <tr>
+              <td>{{pat.FirstName}}</td>
+              <td>{{pat.LastName}}</td> 
+              <td>
+                <button type="button" class="btn btn-warning" (click)="selectEmployee(pat)" data-toggle="modal" data-target="#myModal2">Select</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>      
+    </div>  
+  </div>
+
+  <div class="form-group col-md-6" *ngIf="showInfo">
+    <h5 style="color: blue;">Employee Details</h5>
+    <div class="col">
+      <div>
+        <label for="">Name: {{FName}}</label> 
+      </div>
+      <div>
+        <label for="">Last Name: {{LastN}}</label> 
+      </div>
+      <div>
+        <label for="">Gender: {{Gender}}</label>  
+      </div>
+      <div>
+        <label for="">Title: {{Title}}</label>
+      </div>
+      <div>
+        <label for="">Birth Date: {{HiredD}}</label> 
+      </div>
+      <div>
+        <label for="">Hired Date: {{Birthd}}</label> 
+      </div>
+      <div>
+        <label for="">Role: {{Role}}</label> 
+      </div>
+      <div>
+        <label for="">Employee Code: {{empCode}}</label> 
+      </div>
+      <div>
+        <label for="">Office: {{office}}</label> 
+      </div>
+      <div>
+        <label for="">Number of tasks assigned: {{noTask}}</label>   
+      </div>
+      <div>
+        <label for="">Date Assigned: {{dateAssigned}}</label> 
+      </div>
+      <div>
+        <label for="">Hours Workded: {{hours}}</label> 
+      </div>
+      <div>
+        <label for="">Total Amount Due: R{{amount}}</label> 
+      </div>
+    </div>
+  </div>
+</div>

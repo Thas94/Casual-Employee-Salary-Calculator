@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="AppoimtmentModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="PATIENT">
+    <Key>
+      <PropertyRef Name="PATIENTID" />
+    </Key>
+    <Property Name="PATIENTID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FIRSTNAME" Type="nchar" MaxLength="50" />
+    <Property Name="LASTNAME" Type="nchar" MaxLength="50" />
+    <Property Name="EMAILADDRESS" Type="nchar" MaxLength="50" />
+    <Property Name="PASSWORD" Type="nchar" MaxLength="50" />
+    <Property Name="USERNAME" Type="nchar" MaxLength="50" />
+    <Property Name="CONTACT" Type="int" />
+  </EntityType>
+  <EntityContainer Name="AppoimtmentModelStoreContainer">
+    <EntitySet Name="PATIENT" EntityType="Self.PATIENT" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,83 @@
+   
+  
+        
+  <div class="btn-group col-lg-16 col-lg-6">
+    <div class="col">
+      <div class="container p-3 my-3 bg-primary text-white">
+        <form class="myform" #studentForm="ngForm" (ngSubmit)="registerStudent(studentForm)"> 
+            <div class=" row">    
+              <div class="col-md-6">
+                <div class="form-group">  
+                  <input type="text" #firstname="ngModel" [(ngModel)]="employees.FirstName" name="FIRSTNAME" class="form-control form-control-lg" placeholder="First Name" required>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="form-group">  
+                  <input type="text" #lastname="ngModel" [(ngModel)]="employees.LastName" name="LASTNAME" class="form-control form-control-lg" placeholder="Last Name" required>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="form-group"> 
+                  <input type="text" #title="ngModel" [(ngModel)]="employees.Title" name="TITLE" class="form-control form-control-lg" placeholder="Title" required>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="form-group"> 
+                  <input type="text" #GENDER="ngModel" [(ngModel)]="employees.Gender" name="GENDER" class="form-control form-control-lg" placeholder="Gender" required>
+                </div>
+              </div>
+
+
+              <div class="col-md-6">
+                <div class="form-group"> 
+                  <input type="text"  #DOB="ngModel" [(ngModel)]="employees.BirthDate" name="DOB" class="form-control form-control-lg btn-block" placeholder="DOB" required>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="form-group"> 
+                  <input type="text"  #HD="ngModel" [(ngModel)]="employees.HireDate" name="HD" class="form-control form-control-lg btn-block" placeholder="Hire Date" required>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="form-group"> 
+                  <input type="text" #role="ngModel" [(ngModel)]="employees.Role" name="role" class="form-control form-control-lg btn-block" placeholder="Role" required>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="form-group"> 
+                  <input type="text" #EmpCode="ngModel" [(ngModel)]="employees.EmployeeCode" name="EmpCode" class="form-control form-control-lg btn-block" placeholder="Employee Code" required>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="form-group"> 
+                  <input type="text" #office="ngModel" [(ngModel)]="employees.Office" name="office" class="form-control form-control-lg btn-block" placeholder="Office" required>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="form-group"> 
+                  <input type="hidden"  #picid="ngModel" [(ngModel)]="employees.PictureID" name="picid" class="form-control form-control-lg btn-block" placeholder="FINGER_ID" required>
+                </div>
+              </div> 
+            </div>  
+            
+            <button type="submit" class="submit-btn btn-block">Sign Up</button>
+          </form>
+      </div>
+    </div>
+  </div>
+
+
+
+  
+  <div class="btn-group col-lg-16 col-lg-6">
+    <button type="button" class="btn btn-primary" style="width:100%" data-toggle="modal" data-target="#myModal3">Student</button><br/>
+  </div>
+ 

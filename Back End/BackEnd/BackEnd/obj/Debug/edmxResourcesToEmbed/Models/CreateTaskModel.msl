@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Model3StoreContainer" CdmEntityContainer="CreateTaskEntity">
+    <EntitySetMapping Name="CreateTasks">
+      <EntityTypeMapping TypeName="Model3.CreateTask">
+        <MappingFragment StoreEntitySet="CreateTasks">
+          <ScalarProperty Name="CreateTaskID" ColumnName="CreateTaskID" />
+          <ScalarProperty Name="TaskDescription" ColumnName="TaskDescription" />
+          <ScalarProperty Name="TaskHours" ColumnName="TaskHours" />
+          <ScalarProperty Name="RoleID" ColumnName="RoleID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
